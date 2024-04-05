@@ -1,25 +1,33 @@
-import './index.css'
-import Header from "./components/Header/Header.jsx"
-import CardList from './components/card-list/card-list.jsx';
+import './index.css';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import NotFoundPage from './pages/not-found/not-found';
+import MainPage from './pages/main/main';
+import AboutPage from './pages/about/about';
+import CatalogPage from './pages/catalog/catalog';
 
 function App() {
     return (
-        <>
-            <Header />
-
-            <main>
-                <div className="container-main">
-
-                    <CardList />
-
-                    <div className="block">
-                        Привет
-                    </div>
-                </div>
-            </main>
-
-        </>
-    )
+        <BrowserRouter>
+            <Routes>
+                <Route
+                    path={"/"}
+                    element={<MainPage />}
+                />
+                <Route
+                    path='/about'
+                    element={<AboutPage />}
+                />
+                <Route
+                    path='/catalog'
+                    element={<CatalogPage />}
+                />
+                <Route
+                    path='*'
+                    element={<NotFoundPage />}
+                />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;

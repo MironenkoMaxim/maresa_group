@@ -1,19 +1,19 @@
-import "./Header.css";
+import "./header.css";
 import Logo from "../img/logo.svg";
 
-export default function Header() {
+function Header() {
   return (
     <header className="header">
       <div className="container">
         <nav className="nav">
           <ul className="nav__list">
             <li className="nav__item">
-              <a className="nav__link" href="#">
+              <a className="nav__link" href="/">
                 Главная
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#">
+              <a className="nav__link" href="/catalog">
                 Каталог
               </a>
             </li>
@@ -23,13 +23,13 @@ export default function Header() {
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#">
-                Доставка
+              <a className="nav__link" href="/about">
+                О бренде
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#">
-                О бренде
+              <a className="nav__link" href="/contacts">
+                Контакты
               </a>
             </li>
           </ul>
@@ -38,3 +38,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;
