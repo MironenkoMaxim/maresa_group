@@ -1,0 +1,25 @@
+.catalog__item {
+ flex: 1;
+}
+
+.catalog__item img {
+ width: 100%;
+ object-fit: cover;
+}
+
+.catalog__buttons {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.catalog__link {
+ padding: 11px 53px;
+ color: inherit;
+}
+
+.catalog__button {
+ padding: 11px 53px;
+ border-radius: 10px;
+ background-color: #E594FF;
+}
