@@ -1,5 +1,4 @@
 import "./header.css";
-import Logo from "../img/logo.svg";
 
 function Header() {
   return (
@@ -18,8 +17,8 @@ function Header() {
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link nav__link_img" href="#">
-                <img className="nav__img" src={Logo} alt="Maresa Group" />
+              <a className="nav__link nav__link_img" href="/">
+                <img className="nav__img" src="img/logo.svg" alt="Maresa Group" width="129" height="49" />
               </a>
             </li>
             <li className="nav__item">
@@ -33,6 +32,12 @@ function Header() {
               </a>
             </li>
           </ul>
+
+          <button type="button" className="nav__button">
+            <svg width={30} height={30} aria-hidden="true">
+              <use xlinkHref="#menu-icon" />
+            </svg>
+          </button>
         </nav>
       </div>
     </header>

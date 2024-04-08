@@ -1,68 +1,103 @@
 export const products = [
  {
   id: 1,
-  name: 'Товар 1',
-  price: 4500,
-  rating: 5,
-  url: 'src/components/img/card-preview_1.png'
+  name: 'SOURCE OF AQUA HYALURONIC 3 SERUM',
+  price: 7500,
+  description: 'УВЛАЖНЯЮЩАЯ СЫВОРОТКА С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
+  url: 'img/preview_1.png'
  },
  {
   id: 2,
-  name: 'Товар 2',
-  price: 10000,
-  rating: 2,
-  url: 'src/components/img/card-preview_2.png'
+  name: 'SOURCE OF AQUA DAY CREAM',
+  price: 6100,
+  description: 'УВЛАЖНЯЮЩИЙ ДНЕВНОЙ КРЕМ С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
+  url: 'img/preview_2.png'
  },
  {
   id: 3,
-  name: 'Товар 3',
-  price: 2,
-  rating: 5,
-  url: 'src/components/img/card-preview_3.png'
+  name: 'SOURCE OF AQUA NIGHT CREAM',
+  price: 6100,
+  description: 'УВЛАЖНЯЮЩИЙ НОЧНОЙ КРЕМ С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
+  url: 'img/preview_3.png'
  },
  {
   id: 4,
-  name: 'Товар 4',
-  price: 50,
-  rating: 5,
-  url: 'src/components/img/card-preview_4.png'
+  name: 'Шампунь WASH After color защита цвета',
+  price: 1650,
+  description: 'Шампунь после окрашивания',
+  url: 'img/preview_4.png'
  },
  {
   id: 5,
-  name: 'Товар 5',
-  price: 2000,
-  rating: 2,
-  url: 'src/components/img/card-preview_1.png'
+  name: 'Шампунь WASH Shampoo dry & normal hair',
+  price: 1650,
+  description: 'Шампунь для нормальных и сухих волос',
+  url: 'img/preview_5.png'
  },
  {
   id: 6,
-  name: 'Товар 6',
-  price: 6000,
-  rating: 3,
-  url: 'src/components/img/card-preview_3.png'
+  name: 'Бальзам-кондиционер BALM After color защита цвета',
+  price: 1650,
+  description: 'Бальзам-кондиционер после окрашивания',
+  url: 'img/preview_6.png'
  },
+ {
+  id: 7,
+  name: 'Бальзам-кондиционер BALM Dry & normal hair',
+  price: 1650,
+  description: 'Бальзам-кондиционер для нормальных и сухих волос',
+  url: 'img/preview_7.png'
+ },
+ {
+  id: 8,
+  name: 'Маска-уход MASK',
+  price: 1200,
+  description: 'Интенсивная питающая маска-уход для ослабленных волос',
+  url: 'img/preview_8.png'
+ },
+ {
+  id: 9,
+  name: 'Ампулы OLIGOMIX',
+  price: 3000,
+  description: 'Ампулы для восстановления структуры сухих и поврежденных волос',
+  url: 'img/preview_9.png'
+ },
+ {
+  id: 10,
+  name: 'Флюид ULTIMATE FLUID',
+  price: 4000,
+  description: 'Восстанавливающий флюид для волос',
+  url: 'img/preview_10.png'
+ },
+ {
+  id: 11,
+  name: 'Кондиционер TWO SHOTS',
+  price: 1450,
+  description: 'Двухфазный кондиционер для волос',
+  url: 'img/preview_11.png'
+ }
 ]
 
 export const productsTop = [
  {
   id: 1,
-  name: 'Товар 1',
-  price: 4500,
-  rating: 5,
-  url: 'src/components/img/card-preview_1.png'
+  name: 'SOURCE OF AQUA HYALURONIC 3 SERUM',
+  price: 7500,
+  description: 'УВЛАЖНЯЮЩАЯ СЫВОРОТКА С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
+  url: 'img/preview_1.png'
  },
  {
   id: 2,
-  name: 'Товар 2',
-  price: 10000,
-  rating: 2,
-  url: 'src/components/img/card-preview_2.png'
+  name: 'SOURCE OF AQUA DAY CREAM',
+  price: 6100,
+  description: 'УВЛАЖНЯЮЩИЙ ДНЕВНОЙ КРЕМ С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
+  url: 'img/preview_2.png'
  },
  {
   id: 3,
-  name: 'Товар 3',
-  price: 2,
-  rating: 5,
-  url: 'src/components/img/card-preview_3.png'
+  name: 'SOURCE OF AQUA NIGHT CREAM',
+  price: 6100,
+  description: 'УВЛАЖНЯЮЩИЙ НОЧНОЙ КРЕМ С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
+  url: 'img/preview_3.png'
  },
 ]
