@@ -1,6 +1,6 @@
 
 
-import Header from "../../components/header/header";
+import HeaderMain from "../../components/header-main/header-main";
 import CardList from "../../components/card-list/card-list";
 import './main.css';
 import { productsTop } from "../../mock/mock";
@@ -8,7 +8,7 @@ import { productsTop } from "../../mock/mock";
 function MainPage() {
  return (
   <>
-   <Header />
+   <HeaderMain />
 
    <main>
 
