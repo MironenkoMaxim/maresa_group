@@ -12,7 +12,7 @@ function CatalogPage() {
 
    <main>
 
-    <div className="container-main">
+    <div className="container">
 
      <CardList products={products} />
 
