@@ -1,9 +1,9 @@
-import Header from "../../components/header/header";
+import HeaderMain from "../../components/header-main/header-main";
 
 function AboutPage() {
  return (
   <>
-   <Header />
+   <HeaderMain />
 
    <main>
 

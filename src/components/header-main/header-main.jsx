@@ -1,6 +1,6 @@
-import "./header.css";
+import "./header-main.css";
 
-function Header() {
+function HeaderMain() {
   return (
     <header className="header">
       <div className="container">
@@ -44,4 +44,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderMain;

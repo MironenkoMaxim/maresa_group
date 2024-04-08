@@ -1,6 +1,5 @@
 
-
-import Header from "../../components/header/header";
+import HeaderMain from "../../components/header-main/header-main";
 import CardList from "../../components/card-list/card-list";
 import './catalog.css';
 import { products } from "../../mock/mock";
@@ -8,7 +7,7 @@ import { products } from "../../mock/mock";
 function CatalogPage() {
  return (
   <>
-   <Header />
+   <HeaderMain />
 
    <main>
 
