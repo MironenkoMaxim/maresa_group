@@ -1,29 +1,155 @@
-.about {
+.about__inner {
  display: flex;
  justify-content: space-between;
  align-items: center;
+ margin: 5rem 0;
+}
+
+.about__column {
+ display: flex;
+ flex-direction: column;
+ flex-basis: 50%;
+}
+
+.about__column:nth-child(2) {
+ align-items: flex-end;
 }
 
 .about__link {
+ align-self: flex-start;
+ margin-top: 2rem;
  text-transform: uppercase;
- font-weight: 300;
- font-size: 18px;
- letter-spacing: 3%;
- text-decoration: underline;
- color: inherit;
 }
 
-@media (max-width: 768px) {
+.title {
+ display: block;
+ text-align: center;
+ font-size: 1.25rem;
+ font-weight: 500;
+ letter-spacing: 1px;
+ line-height: 1.125rem;
+}
 
+.popular__title {
+ margin-top: 2rem;
+ margin-bottom: 1rem;
+}
+
+.about__mark {
+ font-weight: 600;
+}
+
+.about__text {
+ max-width: 500px;
+}
+
+.about__img-wrapper {
+ position: relative;
+ padding-bottom: 100%;
+}
+
+.slider {
+ position: relative;
+ height: 500px;
+ width: 100%;
+ max-width: 1920px;
+ margin: 0 auto;
+ background-color: var(--text);
+}
+
+.slide__img {
+ position: absolute;
+ top: 0;
+ height: 100%;
+ width: 100%;
+ object-fit: cover;
+}
+
+.slider__info {
+ position: relative;
+ padding: 0 3rem;
+ margin: auto;
+}
+
+.info {
+ max-width: 900px;
+ box-sizing: content-box;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 100%;
+}
+
+.info__text {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ flex-basis: 70%;
+ text-transform: uppercase;
+ color: var(--white);
+ row-gap: 1.5rem;
+}
+
+.info__title {
+ font-size: 1.875rem;
+ font-weight: 300;
+}
+
+.info__logo {
+ display: block;
+}
+
+.info__img {
+ width: 350px;
+ height: auto;
+}
+
+@media (max-width: 811px) {
+ .about__img {
+  width: 300px;
+  height: auto;
+ }
+}
+
+@media (max-width: 600px) {
  .about {
   flex-direction: column;
-  align-items: center;
+  row-gap: 2rem;
  }
 
  .about__img {
-  max-width: 100%;
-  width: 320px;
+  width: 100%;
+  max-width: 500px;
   height: auto;
  }
 
+ .about__text {
+  max-width: 100%;
+ }
+
+ .info {
+  flex-direction: column;
+  justify-content: center;
+ }
+
+ .info__text {
+  text-align: center;
+  flex-basis: auto;
+  align-items: center;
+ }
+
+ .info__img {
+  width: 200px;
+ }
+}
+
+@media (max-width: 480px) {
+ :root {
+  font-size: 13px;
+ }
+
+ .info__button {
+  position: absolute;
+  bottom: 3rem;
+ }
 }
