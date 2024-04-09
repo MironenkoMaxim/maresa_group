@@ -1,4 +1,5 @@
 import "./header-main.css";
+import { AppRoute } from "../../const";
 
 function HeaderMain() {
   return (
@@ -7,27 +8,27 @@ function HeaderMain() {
         <nav className="nav">
           <ul className="nav__list">
             <li className="nav__item">
-              <a className="nav__link" href="/">
+              <a className="nav__link" href={AppRoute.root}>
                 Главная
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="/catalog">
+              <a className="nav__link" href={AppRoute.catalog}>
                 Каталог
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link nav__link_img" href="/">
+              <a className="nav__link nav__link_img" href={AppRoute.root}>
                 <img className="nav__img" src="img/logo.svg" alt="Maresa Group" width="129" height="49" />
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="/about">
+              <a className="nav__link" href={AppRoute.about}>
                 О бренде
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="/contacts">
+              <a className="nav__link" href={AppRoute.contacts}>
                 Контакты
               </a>
             </li>

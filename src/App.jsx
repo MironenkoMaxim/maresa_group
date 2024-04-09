@@ -4,21 +4,22 @@ import NotFoundPage from './pages/not-found/not-found';
 import MainPage from './pages/main/main';
 import AboutPage from './pages/about/about';
 import CatalogPage from './pages/catalog/catalog';
+import { AppRoute } from './const';
 
 function App() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route
-                    path={"/"}
+                    path={AppRoute.root}
                     element={<MainPage />}
                 />
                 <Route
-                    path='/about'
+                    path={AppRoute.about}
                     element={<AboutPage />}
                 />
                 <Route
-                    path='/catalog'
+                    path={AppRoute.catalog}
                     element={<CatalogPage />}
                 />
                 <Route
