@@ -1,4 +1,5 @@
 import HeaderMain from "../../components/header-main/header-main";
+import Footer from "../../components/footer/footer";
 
 function AboutPage() {
  return (
@@ -14,6 +15,8 @@ function AboutPage() {
     </div>
 
    </main >
+
+   <Footer />
 
   </>
  )
