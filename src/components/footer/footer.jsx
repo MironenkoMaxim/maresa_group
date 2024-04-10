@@ -28,7 +28,7 @@ function Footer() {
             </div>
           </div>
           <div className="footer__copy">
-            Copyright ©MARESA 2024
+            Copyright © MARESA GROUP 2024
           </div>
         </div>
       </div>

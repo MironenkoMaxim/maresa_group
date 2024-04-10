@@ -9,7 +9,7 @@ function SubscribeForm() {
       <h3 className='subscribe__title title'>Подпишитесь на наши новости</h3>
       <div className="subscribe__input-wrapper">
        <input type="email" placeholder='Ваш E-mail' className='subscribe__input' />
-       <button type="button" className='subscribe__button'>Подписаться</button>
+       <button type="button" className='subscribe__button border__button border__button_dark'>Подписаться</button>
       </div>
      </div>
      <div className="subscribe__column">

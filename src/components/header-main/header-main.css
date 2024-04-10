@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 3.125rem;
   min-height: 70px;
   list-style-type: none;
 }
@@ -63,4 +63,5 @@
     pointer-events: auto;
     visibility: visible;
   }
+
 }
