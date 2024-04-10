@@ -5,6 +5,7 @@ import MainPage from './pages/main/main';
 import AboutPage from './pages/about/about';
 import CatalogPage from './pages/catalog/catalog';
 import { AppRoute } from './const';
+import ContactsPage from './pages/contacts/contacts';
 
 function App() {
     return (
@@ -21,6 +22,10 @@ function App() {
                 <Route
                     path={AppRoute.catalog}
                     element={<CatalogPage />}
+                />
+                <Route
+                    path={AppRoute.contacts}
+                    element={<ContactsPage />}
                 />
                 <Route
                     path='*'

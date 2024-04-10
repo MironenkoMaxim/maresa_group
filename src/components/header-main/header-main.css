@@ -3,10 +3,9 @@
 }
 
 .nav__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  justify-content: space-between;
-  gap: 3.125rem;
   min-height: 70px;
   list-style-type: none;
 }
@@ -24,6 +23,21 @@
 .nav__button:active,
 .nav__button:focus {
   color: var(--special);
+}
+
+.nav__link_active {
+  color: var(--special);
+}
+
+.nav__item_logo {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.nav__item:nth-child(4),
+.nav__item:nth-child(5) {
+  justify-self: end;
 }
 
 @media (max-width: 768px) {
@@ -63,5 +77,4 @@
     pointer-events: auto;
     visibility: visible;
   }
-
 }
