@@ -13,6 +13,7 @@
   --background: #ffffff;
   --grey: #84838e;
   --light-grey: #f9f9f9;
+  --border: #d6d6d6;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -137,7 +138,6 @@ input {
 .container {
   margin: 0 auto;
   max-width: 1230px;
-  padding: 0 15px;
 }
 
 .visually-hidden {
