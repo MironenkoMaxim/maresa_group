@@ -1,0 +1,53 @@
+.accordion__title {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.accordion__title {
+ text-transform: uppercase;
+}
+
+.product__accordion {
+ margin-top: 1.2rem;
+}
+
+.accordion__item {
+ padding: 0.625rem;
+ border-bottom: 1px solid var(--text);
+}
+
+.accordion__button {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 1.875rem;
+ width: 1.875rem;
+ border-radius: 50%;
+ background-color: var(--light-grey);
+}
+
+.accordion__button:hover {
+ background-color: var(--special-2-hover);
+}
+
+.accordion__button_active {
+ transform: rotate(45deg);
+}
+
+.accordion___content {
+ text-transform: lowercase;
+ opacity: 0;
+ visibility: hidden;
+ line-height: 1.5625rem;
+ height: 0;
+ transition:
+  height,
+  opacity ease-in 300ms;
+}
+
+.accordion___content_active {
+ opacity: 1;
+ height: 100%;
+ visibility: visible;
+}

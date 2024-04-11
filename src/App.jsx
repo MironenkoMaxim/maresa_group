@@ -6,10 +6,13 @@ import AboutPage from './pages/about/about';
 import CatalogPage from './pages/catalog/catalog';
 import { AppRoute } from './const';
 import ContactsPage from './pages/contacts/contacts';
+import ProductPage from './pages/product/product';
+import ScrollToTop from './components/scroll-to-top/scroll-to-top';
 
 function App() {
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <Routes>
                 <Route
                     path={AppRoute.root}
@@ -22,6 +25,10 @@ function App() {
                 <Route
                     path={AppRoute.catalog}
                     element={<CatalogPage />}
+                />
+                <Route
+                    path={`${AppRoute.product}/:id`}
+                    element={<ProductPage />}
                 />
                 <Route
                     path={AppRoute.contacts}

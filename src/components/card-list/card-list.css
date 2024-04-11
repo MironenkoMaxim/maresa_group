@@ -22,9 +22,6 @@
 
 
 @media (max-width: 820px) {
- :root {
-  font-size: 14px;
- }
 
  .catalog {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -34,10 +31,6 @@
 
 
 @media (max-width: 480px) {
- :root {
-  font-size: 14px;
- }
- 
  .catalog {
   justify-content: center;
  }

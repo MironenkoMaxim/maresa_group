@@ -1,4 +1,6 @@
-import './card-item.css'
+import './card-item.css';
+import { Link } from 'react-router-dom';
+import { AppRoute } from '../../const';
 
 function CardItem(props) {
 
@@ -18,7 +20,8 @@ function CardItem(props) {
    <h3 className='catalog__title'>{name}</h3>
 
    <div className="catalog__bottom">
-    <a href="#" className="catalog__link">Подробнее</a>
+    <Link className="catalog__link" to={`${AppRoute.product}/${id}`}>Подробнее
+    </Link>
     <span className="catalog__price">{price} руб</span>
    </div>
 
