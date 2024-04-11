@@ -6,6 +6,7 @@ import './main.css';
 import { productsTop } from "../../mock/mock";
 import SubscribeForm from "../../components/subscribe/subscribe";
 import Footer from "../../components/footer/footer";
+import Slider from "../../components/slider.jsx/slider";
 
 function MainPage() {
   return (
@@ -14,31 +15,7 @@ function MainPage() {
 
       <main>
 
-        <div className="slider">
-
-          <picture>
-            <source type="image/png" media="(max-width: 600px)" srcSet="img/slides/slide_1@600.png 1x" />
-            <source type="image/png" media="(max-width: 1280px)"
-              srcSet="img/slides/slide_1@1280.png" />
-            <img className="slide__img" src="img/slides/slide_1@1920.png" srcSet="img/slides/slide_1@1920.png"
-              alt="Slide 1" />
-          </picture>
-
-          <div className="slider__info info">
-            <p className="info__text">
-              <span className="info__title">
-                <span className="info__logo">MARESA SKINCARE</span>
-                Сердце океана в каждом средстве
-              </span>
-              <button type="button" className="button info__button">В каталог</button>
-            </p>
-            <picture>
-              <source type="image/png" media="(max-width: 600px)" srcSet="img/slides/min_1@600.png" />
-              <img className="info__img" src="img/slides/min_1@1920.png" srcSet="img/slides/min_1@1920.png"
-                alt="Min 1" />
-            </picture>
-          </div>
-        </div>
+        <Slider />
 
         <section className="popular__catalog">
           <div className="popular__container container">

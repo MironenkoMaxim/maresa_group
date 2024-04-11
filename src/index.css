@@ -13,6 +13,7 @@
   --background: #ffffff;
   --grey: #84838e;
   --light-grey: #f9f9f9;
+  --light-grey-tr: rgb(249, 249, 249, 0.5);
   --border: #d6d6d6;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,6 +23,11 @@
 
 * {
   box-sizing: border-box;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  display: none !important;
 }
 
 input[type="radio"] {

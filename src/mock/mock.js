@@ -531,3 +531,46 @@ export const productsFull = [
   ]
  }
 ]
+
+export const slides = [
+ {
+  id: 1,
+  brand_name: 'MARESA SKINCARE',
+  url_600: 'img/slides/slide_1@600.png',
+  url_1280: 'img/slides/slide_1@1280.png',
+  url_1920: 'img/slides/slide_1@1920.png',
+  title: 'Сердце океана в каждом средстве',
+  min_600: 'img/slides/min_1@600.png',
+  min_1920: 'img/slides/min_1@1920.png'
+ },
+ {
+  id: 2,
+  brand_name: 'MARESA SKINCARE',
+  url_600: 'img/slides/slide_2@600.png',
+  url_1280: 'img/slides/slide_2@1280.png',
+  url_1920: 'img/slides/slide_2@1920.png',
+  title: 'Сердце океана в каждом средстве',
+  min_600: 'img/slides/min_2@600.png',
+  min_1920: 'img/slides/min_2@1920.png'
+ },
+ {
+  id: 6,
+  brand_name: 'TREND TOUJOUR',
+  url_600: 'img/slides/slide_3@600.png',
+  url_1280: 'img/slides/slide_3@1280.png',
+  url_1920: 'img/slides/slide_3@1920.png',
+  title: 'Передовые профессиональные средства для волос',
+  min_600: 'img/slides/min_3@600.png',
+  min_1920: 'img/slides/min_3@1920.png'
+ },
+ {
+  id: 10,
+  brand_name: 'TREND TOUJOUR',
+  url_600: 'img/slides/slide_4@600.png',
+  url_1280: 'img/slides/slide_4@1280.png',
+  url_1920: 'img/slides/slide_4@1920.png',
+  title: 'Передовые профессиональные средства для волос',
+  min_600: 'img/slides/min_4@600.png',
+  min_1920: 'img/slides/min_4@1920.png'
+ }
+]
