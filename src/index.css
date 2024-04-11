@@ -9,10 +9,12 @@
   --special: #e594ff;
   --special-hover: #eebefe;
   --special-2: #f4d455;
-  --special-2-hover: #FFF8DE;
+  --special-2-hover: #fff8de;
   --background: #ffffff;
-  --grey: #84838E;
-  --light-grey: #F9F9F9;
+  --grey: #84838e;
+  --light-grey: #f9f9f9;
+  --light-grey-tr: rgb(249, 249, 249, 0.5);
+  --border: #d6d6d6;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -21,6 +23,11 @@
 
 * {
   box-sizing: border-box;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  display: none !important;
 }
 
 input[type="radio"] {
@@ -53,6 +60,7 @@ h3 {
 
 body {
   margin: 0;
+  height: 100%;
   min-width: 320px;
   background-color: var(--background);
 }
@@ -65,6 +73,20 @@ a {
 
 p {
   margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+.root {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
 }
 
 a::after {
@@ -99,6 +121,7 @@ button {
   cursor: pointer;
   border: none;
   background: none;
+  transition: all ease-in 300ms;
 }
 
 .button {
@@ -121,7 +144,6 @@ input {
 .container {
   margin: 0 auto;
   max-width: 1230px;
-  padding: 0 15px;
 }
 
 .visually-hidden {

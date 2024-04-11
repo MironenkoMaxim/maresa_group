@@ -8,7 +8,7 @@ function HeaderMain() {
         <nav className="nav">
           <ul className="nav__list">
             <li className="nav__item">
-              <a className="nav__link" href={AppRoute.root}>
+              <a className="nav__link nav__link_active" href={AppRoute.root}>
                 Главная
               </a>
             </li>
@@ -17,7 +17,7 @@ function HeaderMain() {
                 Каталог
               </a>
             </li>
-            <li className="nav__item">
+            <li className="nav__item nav__item_logo">
               <a className="nav__link nav__link_img" href={AppRoute.root}>
                 <img className="nav__img" src="img/logo.svg" alt="Maresa Group" width="129" height="49" />
               </a>

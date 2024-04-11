@@ -35,16 +35,19 @@
  column-gap: 2.5rem;
 }
 
-.subscribe__button {
+.border__button {
  padding: 0.625rem 1.5625rem;
  border-radius: 8px;
  letter-spacing: 1px;
+}
+
+.border__button_dark {
  border: 1px solid var(--text);
 }
 
-.subscribe__button:hover,
-.subscribe__button:focus,
-.subscribe__button:active {
+.border__button_dark:hover,
+.border__button_dark:focus,
+.border__button_dark:active {
  color: var(--special);
  border-color: var(--special);
 }
@@ -65,7 +68,7 @@
 }
 
 @media (max-width: 480px) {
- .subscribe__button {
+ .border__button {
   font-size: 12px;
  }
 

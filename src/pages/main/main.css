@@ -145,6 +145,7 @@
  .info {
   flex-direction: column;
   justify-content: center;
+  row-gap: 2rem;
  }
 
  .info__text {

@@ -11,7 +11,7 @@ function CatalogPage() {
   <>
    <HeaderMain />
 
-   <main className="page">
+   <main className="page page_catalog">
 
     <div className="container">
 

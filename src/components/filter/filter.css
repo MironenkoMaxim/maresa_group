@@ -29,10 +29,6 @@
  color: var(--grey);
 }
 
-.page {
- padding-top: 2rem;
-}
-
 .sort {
  display: flex;
  align-items: center;
