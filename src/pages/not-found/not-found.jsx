@@ -2,10 +2,15 @@ import HeaderMain from "../../components/header-main/header-main";
 import Footer from "../../components/footer/footer";
 import "./not-found.css";
 import SubscribeForm from "../../components/subscribe/subscribe";
+import { Helmet } from "react-helmet-async";
 
 function NotFoundPage() {
  return (
   <>
+   <Helmet>
+    <title>Maresa Group | Not found</title>
+   </Helmet>
+
    <HeaderMain />
 
    <main className="page">

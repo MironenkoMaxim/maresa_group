@@ -9,11 +9,16 @@ import Footer from "../../components/footer/footer";
 import Slider from "../../components/slider.jsx/slider";
 import { Link } from "react-router-dom";
 import { AppRoute } from "../../const";
+import { Helmet } from "react-helmet-async";
 
 function MainPage() {
 
   return (
     <>
+      <Helmet>
+        <title>Maresa Group</title>
+      </Helmet>
+
       <HeaderMain />
 
       <main>

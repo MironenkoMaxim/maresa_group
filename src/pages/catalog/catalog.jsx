@@ -8,6 +8,7 @@ import Footer from "../../components/footer/footer";
 import { useCallback, useState } from "react";
 import { FilterNames } from "../../const";
 import { sortProducts } from "../../util/util";
+import { Helmet } from "react-helmet-async";
 
 function CatalogPage() {
 
@@ -25,7 +26,7 @@ function CatalogPage() {
  const handleFilterChange = useCallback((value) => {
   setActiveFilter(value);
  }, []);
- 
+
  const handleSortChange = useCallback((value) => {
   setActiveSort(value);
  }, []);
@@ -34,6 +35,10 @@ function CatalogPage() {
 
  return (
   <>
+   <Helmet>
+    <title>Maresa Group | Каталог</title>
+   </Helmet>
+
    <HeaderMain />
 
    <main className="page page_catalog">
@@ -41,10 +46,10 @@ function CatalogPage() {
     <div className="container">
 
      <Filter
-     activeFilter={activeFilter}
-     onChangeActiveFilter={handleFilterChange}
-     activeSort={activeSort}
-     onChangeActiveSort={handleSortChange}
+      activeFilter={activeFilter}
+      onChangeActiveFilter={handleFilterChange}
+      activeSort={activeSort}
+      onChangeActiveSort={handleSortChange}
      />
 
      <CardList products={sortedProducts} />

@@ -1,4 +1,5 @@
 import './index.css';
+import { HelmetProvider } from 'react-helmet-async';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import NotFoundPage from './pages/not-found/not-found';
 import MainPage from './pages/main/main';
@@ -11,35 +12,37 @@ import ScrollToTop from './components/scroll-to-top/scroll-to-top';
 
 function App() {
     return (
-        <BrowserRouter>
-            <ScrollToTop />
-            <Routes>
-                <Route
-                    path={AppRoute.root}
-                    element={<MainPage />}
-                />
-                <Route
-                    path={AppRoute.about}
-                    element={<AboutPage />}
-                />
-                <Route
-                    path={AppRoute.catalog}
-                    element={<CatalogPage />}
-                />
-                <Route
-                    path={`${AppRoute.product}/:id`}
-                    element={<ProductPage />}
-                />
-                <Route
-                    path={AppRoute.contacts}
-                    element={<ContactsPage />}
-                />
-                <Route
-                    path='*'
-                    element={<NotFoundPage />}
-                />
-            </Routes>
-        </BrowserRouter>
+        <HelmetProvider>
+            <BrowserRouter>
+                <ScrollToTop />
+                <Routes>
+                    <Route
+                        path={AppRoute.root}
+                        element={<MainPage />}
+                    />
+                    <Route
+                        path={AppRoute.about}
+                        element={<AboutPage />}
+                    />
+                    <Route
+                        path={AppRoute.catalog}
+                        element={<CatalogPage />}
+                    />
+                    <Route
+                        path={`${AppRoute.product}/:id`}
+                        element={<ProductPage />}
+                    />
+                    <Route
+                        path={AppRoute.contacts}
+                        element={<ContactsPage />}
+                    />
+                    <Route
+                        path='*'
+                        element={<NotFoundPage />}
+                    />
+                </Routes>
+            </BrowserRouter>
+        </HelmetProvider>
     );
 }
 
