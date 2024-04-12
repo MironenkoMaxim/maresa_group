@@ -5,8 +5,8 @@ import Accordion from "../../components/accordion/accordion";
 import { productsFull } from "../../mock/mock";
 import { useParams } from 'react-router-dom';
 import RelatedProducts from "../../components/related-products/related-products";
-import { products } from "../../mock/mock";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 function ProductPage() {
 
@@ -30,6 +30,10 @@ function ProductPage() {
 
   return (
     <>
+      <Helmet>
+        <title>{`Maresa Group | ${product.name}`}</title>
+      </Helmet>
+
       <HeaderMain />
 
       <main className="page page_product">

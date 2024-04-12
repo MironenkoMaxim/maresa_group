@@ -1,4 +1,5 @@
 import HeaderMain from "../../components/header-main/header-main";
+import { Helmet } from 'react-helmet-async';
 import Footer from "../../components/footer/footer";
 import "./about.css";
 import { AppRoute } from "../../const";
@@ -8,6 +9,10 @@ import SubscribeForm from "../../components/subscribe/subscribe";
 function AboutPage() {
   return (
     <>
+      <Helmet>
+        <title>Maresa Group | О бренде</title>
+      </Helmet>
+
       <HeaderMain />
 
       <main className="page page_about-brand">

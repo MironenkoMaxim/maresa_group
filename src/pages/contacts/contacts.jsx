@@ -2,10 +2,15 @@
 import HeaderMain from "../../components/header-main/header-main";
 import './contacts.css';
 import Footer from "../../components/footer/footer";
+import { Helmet } from 'react-helmet-async';
 
 function ContactsPage() {
  return (
   <>
+   <Helmet>
+    <title>Maresa Group | Контакты</title>
+   </Helmet>
+   
    <HeaderMain />
 
    <main className="page page_contacts">
