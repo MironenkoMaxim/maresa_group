@@ -7,8 +7,11 @@ import { productsTop } from "../../mock/mock";
 import SubscribeForm from "../../components/subscribe/subscribe";
 import Footer from "../../components/footer/footer";
 import Slider from "../../components/slider.jsx/slider";
+import { Link } from "react-router-dom";
+import { AppRoute } from "../../const";
 
 function MainPage() {
+
   return (
     <>
       <HeaderMain />
@@ -38,7 +41,7 @@ function MainPage() {
                 <p className="about__text">
                   Бренд MARESA SKINCARE был основан в 2017 году. Название образовано от словосочетаний <span className="about__mark">SApare del MARE</span> и <span className="about__mark">SApоre de MARE</span>, что в переводе с итальянского означает «знание моря» и «вкус моря».
                 </p>
-                <a href="#" className="about__link">Подробнее о бренде</a>
+                <Link to={AppRoute.about} className="about__link link">Подробнее о бренде</Link>
               </div>
 
               <div className="about__column">
