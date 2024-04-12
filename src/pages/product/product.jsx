@@ -4,9 +4,9 @@ import "./product.css";
 import Accordion from "../../components/accordion/accordion";
 import { productsFull } from "../../mock/mock";
 import { useParams } from 'react-router-dom';
-import CardList from "../../components/card-list/card-list";
-import { productsRelated } from "../../mock/mock";
-import { useState } from "react";
+import RelatedProducts from "../../components/related-products/related-products";
+import { products } from "../../mock/mock";
+import { useEffect, useState } from "react";
 
 function ProductPage() {
 
@@ -23,6 +23,10 @@ function ProductPage() {
   function handleInputChange(value) {
     setVolume(value);
   }
+
+  useEffect(() => {
+    setVolume(product.volume[0])
+  }, [id])
 
   return (
     <>
@@ -80,11 +84,7 @@ function ProductPage() {
               </div>
             </div>
 
-            <div className="product__related related">
-              <h2 className="related__title title">Рекомендуем попробовать</h2>
-
-              <CardList products={productsRelated} />
-            </div>
+            <RelatedProducts id={id} />
           </div>
         </section>
 

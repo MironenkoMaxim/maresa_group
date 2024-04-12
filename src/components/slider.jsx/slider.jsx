@@ -1,6 +1,8 @@
 import { useRef, useEffect } from 'react';
 import { register } from 'swiper/element/bundle';
 import { slides } from '../../mock/mock';
+import { Link } from 'react-router-dom';
+import { AppRoute } from '../../const';
 
 register();
 
@@ -29,16 +31,18 @@ function Slider() {
        height: 2.25rem;
        border-radius: 50%;
        background-color: var(--light-grey);
+       background-repeat: no-repeat;
+       background-position: center;
+     }
+     .swiper-button-next:hover,
+     .swiper-button-prev:hover {
+      background-color: var(--special-2-hover);
      }
      .swiper-button-prev {
       background-image: url("img/arrow-left.svg");
-      background-repeat: no-repeat;
-      background-position: center;
     }
     .swiper-button-next {
       background-image: url("img/arrow-right.svg");
-      background-repeat: no-repeat;
-      background-position: center;
     }
     .swiper-button-next svg,
     .swiper-button-prev svg {
@@ -79,7 +83,7 @@ function Slider() {
          <span className="info__logo">{slide.brand_name}</span>
          {slide.title}
         </span>
-        <button type="button" className="button info__button">В каталог</button>
+        <Link className="button info__button" to={AppRoute.catalog}>В каталог</Link>
        </p>
        <picture>
         <source type="image/png" media="(max-width: 600px)" srcSet={slide.min_600} />
@@ -91,8 +95,6 @@ function Slider() {
     </swiper-slide>
    ))
    }
-   <div className="swiper-button-prev"></div>
-   <div className="swiper-button-next"></div>
   </swiper-container>
  )
 }

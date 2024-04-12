@@ -6,9 +6,9 @@ function SubscribeForm() {
    <div className="subscribe__container container">
     <div className="subscribe__inner">
      <div className="subscribe__column">
-      <h3 className='subscribe__title title'>Подпишитесь на наши новости</h3>
+      <h2 className='subscribe__title title'>Подпишитесь на наши новости</h2>
       <div className="subscribe__input-wrapper">
-       <input type="email" placeholder='Ваш E-mail' className='subscribe__input' />
+       <input type="email" placeholder='Ваш E-mail' className='subscribe__input' name="email" autoComplete='email'/>
        <button type="button" className='subscribe__button border__button border__button_dark'>Подписаться</button>
       </div>
      </div>
