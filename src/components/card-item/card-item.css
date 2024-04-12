@@ -7,6 +7,7 @@
 .catalog__preview-wrapper {
  position: relative;
  padding-bottom: 100%;
+ cursor: pointer;
 }
 
 .catalog__preview {
@@ -43,3 +44,10 @@
  font-weight: 600;
 }
 
+.catalog__volume {
+ display: flex;
+}
+
+.catalog-volume__del {
+ padding: 0 5px;
+}
