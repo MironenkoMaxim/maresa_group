@@ -175,6 +175,7 @@
   }
 
   .about-brand__column_img {
+    position: static;
     min-height: 300px;
     width: 100%;
     background-position-x: center;
