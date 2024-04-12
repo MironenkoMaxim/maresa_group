@@ -25,11 +25,6 @@
   box-sizing: border-box;
 }
 
-.swiper-button-next,
-.swiper-button-prev{
-  display: none !important;
-}
-
 input[type="radio"] {
   appearance: none;
   margin: 0;
@@ -62,6 +57,7 @@ body {
   margin: 0;
   height: 100%;
   min-width: 320px;
+  overflow-x: hidden;
   background-color: var(--background);
 }
 
@@ -89,7 +85,11 @@ html {
   flex: 1 1 auto;
 }
 
-a::after {
+.scroll-lock {
+  overflow: hidden;
+}
+
+.link::after {
   content: "";
   display: block;
   position: absolute;
@@ -101,7 +101,7 @@ a::after {
   transition: width 0.5s;
 }
 
-a:not(.nav__link_img):hover::after {
+.link:hover:not(.active)::after {
   content: "";
   width: 100%;
   display: block;
@@ -125,12 +125,18 @@ button {
 }
 
 .button {
+  font-size: 13px;
   border-radius: 8px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--white);
-  padding: 0.625rem 1.5625rem;
+  padding: 0.5rem 1.375rem;
   background-color: var(--special);
+}
+
+.button_big {
+  padding: 1rem 2.5rem;
+  font-size: 14px;
 }
 
 input {

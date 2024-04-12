@@ -1,78 +1,100 @@
 export const products = [
  {
   id: 1,
+  brand: 'Maresa Group',
   name: 'SOURCE OF AQUA HYALURONIC 3 SERUM',
   price: 7500,
+  volume: [50,],
   description: 'УВЛАЖНЯЮЩАЯ СЫВОРОТКА С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
   url: 'img/preview_1.png'
  },
  {
   id: 2,
+  brand: 'Maresa Group',
   name: 'SOURCE OF AQUA DAY CREAM',
   price: 6100,
+  volume: [50,],
   description: 'УВЛАЖНЯЮЩИЙ ДНЕВНОЙ КРЕМ С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
   url: 'img/preview_2.png'
  },
  {
   id: 3,
+  brand: 'Maresa Group',
   name: 'SOURCE OF AQUA NIGHT CREAM',
   price: 6100,
+  volume: [50,],
   description: 'УВЛАЖНЯЮЩИЙ НОЧНОЙ КРЕМ С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
   url: 'img/preview_3.png'
  },
  {
   id: 4,
+  brand: 'Trend Toujour',
   name: 'Шампунь WASH After color защита цвета',
   price: 1650,
+  volume: [250, 1000],
   description: 'Шампунь после окрашивания',
   url: 'img/preview_4.png'
  },
  {
   id: 5,
+  brand: 'Trend Toujour',
   name: 'Шампунь WASH Shampoo dry & normal hair',
   price: 1650,
+  volume: [250, 1000],
   description: 'Шампунь для нормальных и сухих волос',
   url: 'img/preview_5.png'
  },
  {
   id: 6,
+  brand: 'Trend Toujour',
   name: 'Бальзам-кондиционер BALM After color защита цвета',
   price: 1650,
+  volume: [1000],
   description: 'Бальзам-кондиционер после окрашивания',
   url: 'img/preview_6.png'
  },
  {
   id: 7,
+  brand: 'Trend Toujour',
   name: 'Бальзам-кондиционер BALM Dry & normal hair',
   price: 1650,
+  volume: [1000],
   description: 'Бальзам-кондиционер для нормальных и сухих волос',
   url: 'img/preview_7.png'
  },
  {
   id: 8,
+  brand: 'Trend Toujour',
   name: 'Маска-уход MASK',
   price: 1200,
+  volume: [200],
   description: 'Интенсивная питающая маска-уход для ослабленных волос',
   url: 'img/preview_8.png'
  },
  {
   id: 9,
+  brand: 'Trend Toujour',
   name: 'Ампулы OLIGOMIX',
   price: 3000,
+  volume: [1000],
   description: 'Ампулы для восстановления структуры сухих и поврежденных волос',
   url: 'img/preview_9.png'
  },
  {
   id: 10,
+  brand: 'Trend Toujour',
   name: 'Флюид ULTIMATE FLUID',
   price: 4000,
+  volume: [100],
   description: 'Восстанавливающий флюид для волос',
   url: 'img/preview_10.png'
  },
  {
   id: 11,
+  brand: 'Trend Toujour',
   name: 'Кондиционер TWO SHOTS',
   price: 1450,
+  volume: [250],
   description: 'Двухфазный кондиционер для волос',
   url: 'img/preview_11.png'
  }
@@ -81,46 +103,28 @@ export const products = [
 export const productsTop = [
  {
   id: 1,
+  brand: 'Maresa Group',
   name: 'SOURCE OF AQUA HYALURONIC 3 SERUM',
   price: 7500,
+  volume: [50,],
   description: 'УВЛАЖНЯЮЩАЯ СЫВОРОТКА С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
   url: 'img/preview_1.png'
  },
  {
   id: 2,
+  brand: 'Maresa Group',
   name: 'SOURCE OF AQUA DAY CREAM',
   price: 6100,
+  volume: [50,],
   description: 'УВЛАЖНЯЮЩИЙ ДНЕВНОЙ КРЕМ С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
   url: 'img/preview_2.png'
  },
  {
   id: 3,
+  brand: 'Maresa Group',
   name: 'SOURCE OF AQUA NIGHT CREAM',
   price: 6100,
-  description: 'УВЛАЖНЯЮЩИЙ НОЧНОЙ КРЕМ С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
-  url: 'img/preview_3.png'
- },
-]
-
-export const productsRelated = [
- {
-  id: 1,
-  name: 'SOURCE OF AQUA HYALURONIC 3 SERUM',
-  price: 7500,
-  description: 'УВЛАЖНЯЮЩАЯ СЫВОРОТКА С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
-  url: 'img/preview_1.png'
- },
- {
-  id: 2,
-  name: 'SOURCE OF AQUA DAY CREAM',
-  price: 6100,
-  description: 'УВЛАЖНЯЮЩИЙ ДНЕВНОЙ КРЕМ С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
-  url: 'img/preview_2.png'
- },
- {
-  id: 3,
-  name: 'SOURCE OF AQUA NIGHT CREAM',
-  price: 6100,
+  volume: [50,],
   description: 'УВЛАЖНЯЮЩИЙ НОЧНОЙ КРЕМ С ГИАЛУРОНОВОЙ КИСЛОТОЙ',
   url: 'img/preview_3.png'
  },
@@ -534,16 +538,6 @@ export const productsFull = [
 
 export const slides = [
  {
-  id: 1,
-  brand_name: 'MARESA SKINCARE',
-  url_600: 'img/slides/slide_1@600.png',
-  url_1280: 'img/slides/slide_1@1280.png',
-  url_1920: 'img/slides/slide_1@1920.png',
-  title: 'Сердце океана в каждом средстве',
-  min_600: 'img/slides/min_1@600.png',
-  min_1920: 'img/slides/min_1@1920.png'
- },
- {
   id: 2,
   brand_name: 'MARESA SKINCARE',
   url_600: 'img/slides/slide_2@600.png',
@@ -554,7 +548,17 @@ export const slides = [
   min_1920: 'img/slides/min_2@1920.png'
  },
  {
-  id: 6,
+  id: 1,
+  brand_name: 'MARESA SKINCARE',
+  url_600: 'img/slides/slide_1@600.png',
+  url_1280: 'img/slides/slide_1@1280.png',
+  url_1920: 'img/slides/slide_1@1920.png',
+  title: 'Сердце океана в каждом средстве',
+  min_600: 'img/slides/min_1@600.png',
+  min_1920: 'img/slides/min_1@1920.png'
+ },
+ {
+  id: 10,
   brand_name: 'TREND TOUJOUR',
   url_600: 'img/slides/slide_3@600.png',
   url_1280: 'img/slides/slide_3@1280.png',
@@ -564,7 +568,7 @@ export const slides = [
   min_1920: 'img/slides/min_3@1920.png'
  },
  {
-  id: 10,
+  id: 6,
   brand_name: 'TREND TOUJOUR',
   url_600: 'img/slides/slide_4@600.png',
   url_1280: 'img/slides/slide_4@1280.png',

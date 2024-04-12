@@ -11,13 +11,13 @@ function Footer() {
               <nav className="footer__nav footer-nav">
                 <ul className="footer__nav-list nav-list">
                   <li className="nav-list__item">
-                    <a className="nav-list__link" href={AppRoute.catalog}>Каталог</a>
+                    <a className="nav-list__link link" href={AppRoute.catalog}>Каталог</a>
                   </li>
                   <li className="nav-list__item">
-                    <a className="nav-list__link" href={AppRoute.about}>О бренде</a>
+                    <a className="nav-list__link link" href={AppRoute.about}>О бренде</a>
                   </li>
                   <li className="nav-list__item">
-                    <a className="nav-list__link" href={AppRoute.contacts}>Контакты</a>
+                    <a className="nav-list__link link" href={AppRoute.contacts}>Контакты</a>
                   </li>
                 </ul>
               </nav>

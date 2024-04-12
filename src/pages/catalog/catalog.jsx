@@ -5,8 +5,33 @@ import './catalog.css';
 import { products } from "../../mock/mock";
 import Filter from "../../components/filter/filter";
 import Footer from "../../components/footer/footer";
+import { useCallback, useState } from "react";
+import { FilterNames } from "../../const";
+import { sortProducts } from "../../util/util";
 
 function CatalogPage() {
+
+ const [activeFilter, setActiveFilter] = useState(FilterNames.all);
+
+ const [activeSort, setActiveSort] = useState('')
+
+ const filteredProducts = products.filter((product) => {
+  if (activeFilter === FilterNames.all) {
+   return true;
+  }
+  return product.brand === activeFilter
+ });
+
+ const handleFilterChange = useCallback((value) => {
+  setActiveFilter(value);
+ }, []);
+ 
+ const handleSortChange = useCallback((value) => {
+  setActiveSort(value);
+ }, []);
+
+ const sortedProducts = sortProducts(filteredProducts, activeSort);
+
  return (
   <>
    <HeaderMain />
@@ -15,9 +40,14 @@ function CatalogPage() {
 
     <div className="container">
 
-     <Filter />
+     <Filter
+     activeFilter={activeFilter}
+     onChangeActiveFilter={handleFilterChange}
+     activeSort={activeSort}
+     onChangeActiveSort={handleSortChange}
+     />
 
-     <CardList products={products} />
+     <CardList products={sortedProducts} />
 
     </div>
 
