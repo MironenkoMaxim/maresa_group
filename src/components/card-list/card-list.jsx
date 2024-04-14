@@ -11,8 +11,6 @@ function CardList({ products }) {
      custom={index}
      key={product.id}
      product={product}
-     className="catalog"
-     index={index}
     />
    ))}
   </ul>

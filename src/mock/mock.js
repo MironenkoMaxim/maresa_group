@@ -1,6 +1,7 @@
 export const products = [
  {
   id: 1,
+  countUnit: 'мл',
   brand: 'Maresa Group',
   name: 'SOURCE OF AQUA HYALURONIC 3 SERUM',
   price: 7500,
@@ -10,6 +11,7 @@ export const products = [
  },
  {
   id: 2,
+  countUnit: 'мл',
   brand: 'Maresa Group',
   name: 'SOURCE OF AQUA DAY CREAM',
   price: 6100,
@@ -19,6 +21,7 @@ export const products = [
  },
  {
   id: 3,
+  countUnit: 'мл',
   brand: 'Maresa Group',
   name: 'SOURCE OF AQUA NIGHT CREAM',
   price: 6100,
@@ -28,6 +31,7 @@ export const products = [
  },
  {
   id: 4,
+  countUnit: 'мл',
   brand: 'Trend Toujour',
   name: 'Шампунь WASH After color защита цвета',
   price: 1650,
@@ -37,6 +41,7 @@ export const products = [
  },
  {
   id: 5,
+  countUnit: 'мл',
   brand: 'Trend Toujour',
   name: 'Шампунь WASH Shampoo dry & normal hair',
   price: 1650,
@@ -46,6 +51,7 @@ export const products = [
  },
  {
   id: 6,
+  countUnit: 'мл',
   brand: 'Trend Toujour',
   name: 'Бальзам-кондиционер BALM After color защита цвета',
   price: 1650,
@@ -55,6 +61,7 @@ export const products = [
  },
  {
   id: 7,
+  countUnit: 'мл',
   brand: 'Trend Toujour',
   name: 'Бальзам-кондиционер BALM Dry & normal hair',
   price: 1650,
@@ -64,6 +71,7 @@ export const products = [
  },
  {
   id: 8,
+  countUnit: 'мл',
   brand: 'Trend Toujour',
   name: 'Маска-уход MASK',
   price: 1200,
@@ -73,15 +81,17 @@ export const products = [
  },
  {
   id: 9,
+  countUnit: 'шт',
   brand: 'Trend Toujour',
   name: 'Ампулы OLIGOMIX',
   price: 3000,
-  volume: [1000],
+  volume: [1, 1000],
   description: 'Ампулы для восстановления структуры сухих и поврежденных волос',
   url: 'img/preview_9.png'
  },
  {
   id: 10,
+  countUnit: 'мл',
   brand: 'Trend Toujour',
   name: 'Флюид ULTIMATE FLUID',
   price: 4000,
@@ -91,6 +101,7 @@ export const products = [
  },
  {
   id: 11,
+  countUnit: 'мл',
   brand: 'Trend Toujour',
   name: 'Кондиционер TWO SHOTS',
   price: 1450,
@@ -103,6 +114,7 @@ export const products = [
 export const productsTop = [
  {
   id: 1,
+  countUnit: 'мл',
   brand: 'Maresa Group',
   name: 'SOURCE OF AQUA HYALURONIC 3 SERUM',
   price: 7500,
@@ -112,6 +124,7 @@ export const productsTop = [
  },
  {
   id: 2,
+  countUnit: 'мл',
   brand: 'Maresa Group',
   name: 'SOURCE OF AQUA DAY CREAM',
   price: 6100,
@@ -121,6 +134,7 @@ export const productsTop = [
  },
  {
   id: 3,
+  countUnit: 'мл',
   brand: 'Maresa Group',
   name: 'SOURCE OF AQUA NIGHT CREAM',
   price: 6100,
@@ -133,6 +147,7 @@ export const productsTop = [
 export const productsFull = [
  {
   id: 1,
+  countUnit: 'мл',
   number: 'S1001',
   name: 'SOURCE OF AQUA HYALURONIC 3 SERUM',
   price: {
@@ -186,6 +201,7 @@ export const productsFull = [
  },
  {
   id: 2,
+  countUnit: 'мл',
   number: 'S1002',
   name: 'SOURCE OF AQUA DAY CREAM',
   price: {
@@ -241,6 +257,7 @@ export const productsFull = [
  },
  {
   id: 3,
+  countUnit: 'мл',
   number: 'S1003',
   name: 'SOURCE OF AQUA NIGHT CREAM',
   price: {
@@ -294,6 +311,8 @@ export const productsFull = [
  },
  {
   id: 4,
+  countUnit: 'мл',
+  number: 'SHDCTN',
   name: 'Шампунь WASH After color защита цвета',
   price: {
    '250': 750,
@@ -324,6 +343,8 @@ export const productsFull = [
  },
  {
   id: 5,
+  countUnit: 'мл',
+  number: 'SHNSTN',
   name: 'Шампунь WASH Shampoo dry & normal hair',
   price: {
    '250': 750,
@@ -354,6 +375,8 @@ export const productsFull = [
  },
  {
   id: 6,
+  countUnit: 'мл',
+  number: 'CONDCTN',
   name: 'Бальзам-кондиционер BALM After color защита цвета',
   price: {
    '1000': 1650
@@ -383,6 +406,8 @@ export const productsFull = [
  },
  {
   id: 7,
+  countUnit: 'мл',
+  number: 'CONNSTN',
   name: 'Бальзам-кондиционер BALM Dry & normal hair',
   price: {
    '1000': 1650
@@ -412,6 +437,8 @@ export const productsFull = [
  },
  {
   id: 8,
+  countUnit: 'мл',
+  number: 'MASCHTN',
   name: 'Маска-уход MASK',
   price: {
    '200': 1200,
@@ -442,11 +469,14 @@ export const productsFull = [
  },
  {
   id: 9,
+  countUnit: 'шт',
+  number: 'OLMINTN-2',
   name: 'Ампулы OLIGOMIX',
   price: {
-   '1000': 3000,
+   '1': 350,
+   '1000': 3000
   },
-  volume: [1000],
+  volume: [1, 1000],
   description: 'Ампулы для восстановления структуры сухих и поврежденных волос',
   full_description: [
    'Сила профессионального ухода в ампулах!',
@@ -472,6 +502,8 @@ export const productsFull = [
  },
  {
   id: 10,
+  countUnit: 'мл',
+  number: 'CRILIT1N',
   name: 'Флюид ULTIMATE FLUID',
   price: {
    '100': 4000,
@@ -505,6 +537,8 @@ export const productsFull = [
  },
  {
   id: 11,
+  countUnit: 'мл',
+  number: 'TOTWOSN',
   name: 'Кондиционер TWO SHOTS',
   price: {
    '250': 1450,
@@ -559,7 +593,7 @@ export const slides = [
  },
  {
   id: 10,
-  brand_name: 'TREND TOUJOUR',
+  brand_name: 'Trend Toujour',
   url_600: 'img/slides/slide_3@600.png',
   url_1280: 'img/slides/slide_3@1280.png',
   url_1920: 'img/slides/slide_3@1920.png',
@@ -569,7 +603,7 @@ export const slides = [
  },
  {
   id: 6,
-  brand_name: 'TREND TOUJOUR',
+  brand_name: 'Trend Toujour',
   url_600: 'img/slides/slide_4@600.png',
   url_1280: 'img/slides/slide_4@1280.png',
   url_1920: 'img/slides/slide_4@1920.png',

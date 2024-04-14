@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const CardItem = forwardRef((props, ref) => {
 
- const { id, name, url, price, volume } = props.product;
+ const { id, name, url, price, volume, countUnit } = props.product;
 
  const navigate = useNavigate();
 
@@ -26,7 +26,7 @@ const CardItem = forwardRef((props, ref) => {
     {
      volume.map((value, index) => (
       <li key={value} className='catalog-volume__item'>
-       {value} мл
+       {value} {countUnit}
        {index + 1 !== volume.length && <span className='catalog-volume__del'>|</span>}
       </li>
      ))

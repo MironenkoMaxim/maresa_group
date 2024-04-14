@@ -21,7 +21,7 @@ function CatalogPage() {
   if (activeFilter === FilterNames.all) {
    return true;
   }
-  return product.brand === activeFilter
+  return product.brand === activeFilter;
  });
 
  const handleFilterChange = useCallback((value) => {
@@ -48,7 +48,7 @@ function CatalogPage() {
      className="container"
      initial="hidden"
      whileInView="visible"
-     viewport={{ amount: 0.2, once: true }}
+     //viewport={{ amount: 0.2, once: true }}
     >
 
      <Filter

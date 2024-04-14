@@ -62,7 +62,7 @@ function ProductPage() {
                           onChange={() => handleInputChange(value)}
                           checked={value === volume}
                         />
-                        <label htmlFor={`volume${value}`} className="volume__label">{value} мл</label>
+                        <label htmlFor={`volume${value}`} className="volume__label">{value} {product.countUnit}</label>
                       </li>
                     ))}
                   </ul>
