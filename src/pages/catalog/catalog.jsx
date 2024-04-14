@@ -9,6 +9,7 @@ import { useCallback, useState } from "react";
 import { FilterNames } from "../../const";
 import { sortProducts } from "../../util/util";
 import { Helmet } from "react-helmet-async";
+import { motion } from "framer-motion";
 
 function CatalogPage() {
 
@@ -43,7 +44,12 @@ function CatalogPage() {
 
    <main className="page page_catalog">
 
-    <div className="container">
+    <motion.div
+     className="container"
+     initial="hidden"
+     whileInView="visible"
+     viewport={{ amount: 0.2, once: true }}
+    >
 
      <Filter
       activeFilter={activeFilter}
@@ -54,7 +60,7 @@ function CatalogPage() {
 
      <CardList products={sortedProducts} />
 
-    </div>
+    </motion.div>
 
    </main >
 

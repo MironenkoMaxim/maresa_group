@@ -21,7 +21,7 @@ function RelatedProducts({ id }) {
       speed: 500,
       navigation: true,
       pagination: true,
-      lazy: "true",
+      lazy: true,
       breakpoints: {
         480: {
           slidesPerView: 2,

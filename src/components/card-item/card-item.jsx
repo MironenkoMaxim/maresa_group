@@ -1,8 +1,10 @@
 import './card-item.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { AppRoute } from '../../const';
+import { forwardRef } from 'react';
+import { motion } from 'framer-motion';
 
-function CardItem(props) {
+const CardItem = forwardRef((props, ref) => {
 
  const { id, name, url, price, volume } = props.product;
 
@@ -13,8 +15,7 @@ function CardItem(props) {
  }
 
  return (
-  <li className="catalog__item">
-
+  <li ref={ref} className="catalog__item">
    <div className="catalog__preview-wrapper" onClick={handleCatalogItemClick}>
     <img src={url} className="catalog__preview" alt="Карточка товара" />
    </div>
@@ -40,6 +41,8 @@ function CardItem(props) {
 
   </li>
  )
-}
+});
 
-export default CardItem;
+const MCardItem = motion(CardItem);
+
+export default MCardItem;

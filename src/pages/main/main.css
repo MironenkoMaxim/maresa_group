@@ -1,8 +1,13 @@
+.page__popular,
+.page__about,
+.page__subscribe {
+ margin: 7rem 0;
+}
+
 .about__inner {
  display: flex;
  justify-content: space-between;
  align-items: center;
- margin: 5rem 0;
 }
 
 .about__column {
@@ -31,7 +36,7 @@
 
 .popular__title {
  margin-top: 2rem;
- margin-bottom: 1rem;
+ margin-bottom: 2rem;
 }
 
 .about__mark {
@@ -49,7 +54,7 @@
 
 .slider {
  position: relative;
- height: 500px;
+ height: 100vh;
  width: 100%;
  max-width: 1920px;
  margin: 0 auto;
@@ -118,6 +123,12 @@
   width: 300px;
   height: auto;
  }
+
+ .page__popular,
+ .page__about,
+ .page__subscribe {
+  margin: 5rem 0;
+ }
 }
 
 @media (max-width: 600px) {
@@ -164,6 +175,12 @@
   position: absolute;
   bottom: 3rem;
  }
+
+ .page__popular,
+ .page__about,
+ .page__subscribe {
+  margin: 4rem 0;
+ }
 }
 
 @media (max-width: 480px) {
@@ -176,4 +193,9 @@
   transform: translateX(-12px);
  }
 
+ .page__popular,
+ .page__about,
+ .page__subscribe {
+  margin: 3rem 0;
+ }
 }

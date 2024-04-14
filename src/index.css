@@ -25,6 +25,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 input[type="radio"] {
   appearance: none;
   margin: 0;
@@ -69,10 +73,6 @@ a {
 
 p {
   margin: 0;
-}
-
-html {
-  height: 100%;
 }
 
 .root {

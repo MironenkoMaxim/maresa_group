@@ -18,10 +18,12 @@ function HeaderMain() {
       return;
     }
     setOpenMobileMenu((prev) => !prev);
+    document.body.classList.remove('scroll-lock');
   }
 
   return (
-    <header className="header">
+    <header className="header"
+    >
       <div className="header__container container">
         <nav className="nav">
           <ul className="nav__list">
