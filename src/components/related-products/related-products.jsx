@@ -21,7 +21,7 @@ function RelatedProducts({ id }) {
       speed: 500,
       navigation: true,
       pagination: true,
-      lazy: "true",
+      lazy: true,
       breakpoints: {
         480: {
           slidesPerView: 2,
@@ -86,7 +86,7 @@ function RelatedProducts({ id }) {
       <h2 className="related__title title">Рекомендуем попробовать</h2>
 
       <swiper-container ref={swiperRef} init="false">
-        {productsRelated.map(({ id, name, url, price, volume }) => (
+        {productsRelated.map(({ id, name, url, price, volume, countUnit }) => (
           <swiper-slide key={id}>
             <div className="catalog__item">
               <div className="catalog__preview-wrapper" onClick={() => handleCatalogItemClick(id)}>
@@ -97,7 +97,7 @@ function RelatedProducts({ id }) {
                 {
                   volume.map((value, index) => (
                     <li key={value} className='catalog-volume__item'>
-                      {value} мл
+                      {value} {countUnit}
                       {index + 1 !== volume.length && <span className='catalog-volume__del'>|</span>}
                     </li>
                   ))
