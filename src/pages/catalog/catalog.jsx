@@ -1,6 +1,6 @@
 
 import HeaderMain from "../../components/header-main/header-main";
-import CardList from "../../components/card-list/card-list";
+import MCardList from "../../components/card-list/card-list";
 import './catalog.css';
 import { products } from "../../mock/mock";
 import Filter from "../../components/filter/filter";
@@ -9,9 +9,10 @@ import { useCallback, useState } from "react";
 import { FilterNames } from "../../const";
 import { sortProducts } from "../../util/util";
 import { Helmet } from "react-helmet-async";
-import { motion } from "framer-motion";
 
 function CatalogPage() {
+
+ const [state, setState] = useState(1);
 
  const [activeFilter, setActiveFilter] = useState(FilterNames.all);
 
@@ -26,10 +27,12 @@ function CatalogPage() {
 
  const handleFilterChange = useCallback((value) => {
   setActiveFilter(value);
+  setState((prev) => prev + 1);
  }, []);
 
  const handleSortChange = useCallback((value) => {
   setActiveSort(value);
+  setState((prev) => prev + 1);
  }, []);
 
  const sortedProducts = sortProducts(filteredProducts, activeSort);
@@ -44,12 +47,7 @@ function CatalogPage() {
 
    <main className="page page_catalog">
 
-    <motion.div
-     className="container"
-     initial="hidden"
-     whileInView="visible"
-     //viewport={{ amount: 0.2, once: true }}
-    >
+    <div className="container">
 
      <Filter
       activeFilter={activeFilter}
@@ -58,9 +56,14 @@ function CatalogPage() {
       onChangeActiveSort={handleSortChange}
      />
 
-     <CardList products={sortedProducts} />
+     <MCardList
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+      products={sortedProducts}
+      key={state} />
 
-    </motion.div>
+    </div>
 
    </main >
 
