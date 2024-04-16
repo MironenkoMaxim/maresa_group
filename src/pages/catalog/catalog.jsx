@@ -12,65 +12,64 @@ import { Helmet } from "react-helmet-async";
 
 function CatalogPage() {
 
- const [state, setState] = useState(1);
+  const [state, setState] = useState(1);
 
- const [activeFilter, setActiveFilter] = useState(FilterNames.all);
+  const [activeFilter, setActiveFilter] = useState(FilterNames.all);
 
- const [activeSort, setActiveSort] = useState('')
+  const [activeSort, setActiveSort] = useState('')
 
- const filteredProducts = products.filter((product) => {
-  if (activeFilter === FilterNames.all) {
-   return true;
-  }
-  return product.brand === activeFilter;
- });
+  const filteredProducts = products.filter((product) => {
+    if (activeFilter === FilterNames.all) {
+      return true;
+    }
+    return product.brand === activeFilter;
+  });
 
- const handleFilterChange = useCallback((value) => {
-  setActiveFilter(value);
-  setState((prev) => prev + 1);
- }, []);
+  const handleFilterChange = useCallback((value) => {
+    setActiveFilter(value);
+    setState((prev) => prev + 1);
+  }, []);
 
- const handleSortChange = useCallback((value) => {
-  setActiveSort(value);
-  setState((prev) => prev + 1);
- }, []);
+  const handleSortChange = useCallback((value) => {
+    setActiveSort(value);
+    setState((prev) => prev + 1);
+  }, []);
 
- const sortedProducts = sortProducts(filteredProducts, activeSort);
+  const sortedProducts = sortProducts(filteredProducts, activeSort);
 
- return (
-  <>
-   <Helmet>
-    <title>Maresa Group | Каталог</title>
-   </Helmet>
+  return (
+    <>
+      <Helmet>
+        <title>Maresa Group | Каталог</title>
+      </Helmet>
 
-   <HeaderMain />
+      <HeaderMain />
 
-   <main className="page page_catalog">
+      <main className="page page_catalog">
 
-    <div className="container">
+        <div className="container">
 
-     <Filter
-      activeFilter={activeFilter}
-      onChangeActiveFilter={handleFilterChange}
-      activeSort={activeSort}
-      onChangeActiveSort={handleSortChange}
-     />
+          <Filter
+            activeFilter={activeFilter}
+            onChangeActiveFilter={handleFilterChange}
+            activeSort={activeSort}
+            onChangeActiveSort={handleSortChange}
+          />
 
-     <MCardList
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ amount: 0.2, once: true }}
-      products={sortedProducts}
-      key={state} />
+          <MCardList
+            initial="hidden"
+            animate="visible"
+            products={sortedProducts}
+            key={state} />
 
-    </div>
+        </div>
 
-   </main >
+      </main >
 
-   <Footer />
+      <Footer />
 
-  </>
- )
+    </>
+  )
 }
 
 export default CatalogPage;

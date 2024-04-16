@@ -60,4 +60,8 @@
   .footer__copy {
     font-size: 12px;
   }
+
+  .nav-list {
+    align-items: center;
+  }
 }
