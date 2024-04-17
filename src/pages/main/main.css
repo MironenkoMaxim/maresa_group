@@ -171,11 +171,6 @@
   width: 230px;
  }
 
- .info__button {
-  position: absolute;
-  bottom: 3rem;
- }
-
  .page__popular,
  .page__about,
  .page__subscribe {
