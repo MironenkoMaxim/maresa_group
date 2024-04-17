@@ -4,9 +4,8 @@ import HeaderMain from "../../components/header-main/header-main";
 import CardList from "../../components/card-list/card-list";
 import './main.css';
 import { productsTop } from "../../mock/mock";
-import SubscribeForm from "../../components/subscribe/subscribe";
 import Footer from "../../components/footer/footer";
-import Slider from "../../components/slider.jsx/slider";
+import Slider from "../../components/slider/slider";
 import { Link } from "react-router-dom";
 import { AppRoute } from "../../const";
 import { Helmet } from "react-helmet-async";
@@ -113,8 +112,6 @@ function MainPage() {
 
           </div>
         </motion.section>
-
-        <SubscribeForm />
 
       </main >
 

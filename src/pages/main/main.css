@@ -1,6 +1,5 @@
 .page__popular,
-.page__about,
-.page__subscribe {
+.page__about {
  margin: 7rem 0;
 }
 
@@ -125,8 +124,7 @@
  }
 
  .page__popular,
- .page__about,
- .page__subscribe {
+ .page__about {
   margin: 5rem 0;
  }
 }
@@ -171,14 +169,8 @@
   width: 230px;
  }
 
- .info__button {
-  position: absolute;
-  bottom: 3rem;
- }
-
  .page__popular,
- .page__about,
- .page__subscribe {
+ .page__about {
   margin: 4rem 0;
  }
 }
@@ -194,8 +186,7 @@
  }
 
  .page__popular,
- .page__about,
- .page__subscribe {
+ .page__about {
   margin: 3rem 0;
  }
 }

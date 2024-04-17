@@ -24,7 +24,7 @@ function ContactsPage() {
         <li>ОГРН 1 172 375 098 400</li>
         <li>Юридический адрес: 123290, г. Москва, 1-й Магистральный тупик, д. 5а, офис 32</li>
         <li>Мы будем рады ответить на ваши вопросы 7 дней в неделю с 10:00 до 20:00 (по московскому времени): 8 (499) 840 37 77</li>
-        <li>Адрес электронной почты: <a href="mailto:maresa@maresabeauty.com" className="contacts__email">maresa@maresabeauty.com</a></li>
+        <li>Адрес электронной почты: <a href="mailto:maresa@maresagroup.ru" className="contacts__email">maresa@maresagroup.ru</a></li>
        </ul>
       </div>
      </div>

@@ -23,7 +23,7 @@
  color: var(--white);
  padding: 4.375rem 0;
  row-gap: 2rem;
- background-image: url("img/not-found@1920.jpg");
+ background-image: url("../img/not-found@1920.jpg");
  background-repeat: no-repeat;
  background-position: center;
 }

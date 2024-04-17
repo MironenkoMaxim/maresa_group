@@ -4,7 +4,6 @@ import Footer from "../../components/footer/footer";
 import "./about.css";
 import { AppRoute } from "../../const";
 import { Link } from "react-router-dom";
-import SubscribeForm from "../../components/subscribe/subscribe";
 import { textVariantsLeft, textVariantsRight, textScale, opacityDown } from "../../animation/animation";
 import { motion } from "framer-motion";
 
@@ -243,9 +242,6 @@ function AboutPage() {
           </div>
         </motion.div>
 
-        <div className="about-brand__subscribe">
-          <SubscribeForm />
-        </div>
       </main >
 
       <Footer />

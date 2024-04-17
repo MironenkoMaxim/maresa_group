@@ -96,14 +96,12 @@ function Slider() {
                 </span>
                 <Link className="button info__button" to={AppRoute.catalog}>В каталог</Link>
               </motion.p>
-              <motion.picture
-                variants={textVariantsRight}
-                custom={2}
+              <picture
               >
                 <source type="image/png" media="(max-width: 600px)" srcSet={slide.min_600} />
                 <img className="info__img" src={slide.url_1920} srcSet={slide.min_1920}
                   alt="Min 1" />
-              </motion.picture>
+              </picture>
             </div>
           </motion.div>
         </swiper-slide>

@@ -1,7 +1,6 @@
 import HeaderMain from "../../components/header-main/header-main";
 import Footer from "../../components/footer/footer";
 import "./not-found.css";
-import SubscribeForm from "../../components/subscribe/subscribe";
 import { Helmet } from "react-helmet-async";
 
 function NotFoundPage() {
@@ -22,8 +21,7 @@ function NotFoundPage() {
       <button type="button" className="hero__button border__button border__button_light">Перейти на главную</button>
      </div>
     </section>
-
-    <SubscribeForm />
+    
    </main >
 
    <Footer />
