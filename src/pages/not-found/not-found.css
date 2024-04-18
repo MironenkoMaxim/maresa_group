@@ -42,6 +42,11 @@
  line-height: 4.375rem;
 }
 
+.border__button {
+ padding: 1rem 2rem;
+ border-radius: 10px;
+}
+
 .border__button_light {
  color: var(--white);
  border: 1px solid var(--white);
@@ -64,27 +69,23 @@
 }
 
 @media (max-width: 1280px) {
-
  .hero__content {
-  background-image: url("img/not-found@1280.jpg");
+  background-image: url("../img/not-found@1280.jpg");
  }
-
 }
 
 @media (max-width: 600px) {
-
  .hero__content {
   row-gap: 1rem;
-  background-image: url("img/not-found@600.jpg");
+  background-image: url("../img/not-found@600.jpg");
  }
 
  .hero__error {
   font-size: 3rem;
  }
- 
+
  .hero__title {
   font-size: 1.875rem;
   line-height: 2.9rem;
  }
-
 }
